@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mischaell andres Pulido</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f5ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #8b0000;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00ffb0 !important;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Sección de cursos */
+    .curso-section {
+      margin: 60px auto;
+      max-width: 1200px;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: #008060;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .curso-card {
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .curso-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .curso-card img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .curso-card .card-body {
+      padding: 25px;
+    }
+
+    .curso-card h5 {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .curso-card p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn-ver {
+      background-color: #008060;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-ver:hover {
+      background-color: #006b4f;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1c1f1e;
+      color: white;
+      padding: 40px 0;
+      margin-top: 80px;
+    }
+
+    footer .nav-link {
+      color: #00a77b;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    footer .nav-link:hover {
+      color: #33c29b;
+    }
+
+    footer .nav {
+      justify-content: center;
+      gap: 60px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">mischaell andres Pulido</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="curso.html">Curso</a></li>
+          <li class="nav-item"><a class="nav-link" href="tutoriales.html">Tutoriales</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Domina el Desarrollo Web</h1>
+    <p>Aprende HTML, CSS y JavaScript con nuestros cursos prácticos y modernos. ¡Conviértete en un desarrollador completo!</p>
+  </section>
+
+  <!-- Sección de Cursos -->
+  <div class="container curso-section">
+    <h2>Nuestros Cursos</h2>
+    <div class="row g-4">
+
+      <!-- Curso 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card curso-card">
+          <img src="/img/anime.jfif" alt="Curso HTML">
+          <div class="card-body">
+            <h5>Curso Completo de HTML5</h5>
+            <p>Aprende a construir la estructura de una web profesional desde cero con las mejores prácticas.</p>
+            <a href="#" class="btn btn-ver">Ver Curso</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card curso-card">
+          <img src="/img/carro blanco.jpg" alt="Curso CSS">
+          <div class="card-body">
+            <h5>Curso de CSS3 Avanzado</h5>
+            <p>Domina el diseño responsivo, animaciones y efectos visuales para crear sitios atractivos.</p>
+            <a href="#" class="btn btn-ver">Ver Curso</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card curso-card">
+          <img src="/img/ojo.jfif" alt="Curso JS">
+          <div class="card-body">
+            <h5>Curso de JavaScript Moderno</h5>
+            <p>Aprende la lógica y programación que dan vida a las páginas web dinámicas e interactivas.</p>
+            <a href="#" class="btn btn-ver">Ver Curso</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <nav class="nav justify-content-center gap-4 py-3">
+      <a class="nav-link text-uppercase fw-semibold text-primary" href="curso.html">Cursos</a>
+      <a class="nav-link text-uppercase fw-semibold text-primary" href="tutoriales.html">Tutoriales</a>
+      <a class="nav-link text-uppercase fw-semibold text-primary" href="#">Descargas</a>
+      <a class="nav-link text-uppercase fw-semibold text-primary" href="contactos.html">Contactos</a>
+    </nav>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
